@@ -1,0 +1,359 @@
+.team-card {
+  text-align: center;
+  background-color: $dark-color;
+  border-radius: 10px;
+  position: relative;
+  padding: 70px 0;
+  margin-bottom: 35px;
+
+  &_icon {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  &_shape {
+    background-color: $theme-color2;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  &_logo {
+    margin-bottom: 25px;
+    max-height: 160px;
+
+    img {
+      width: auto;
+      max-height: 100%;
+    }
+  }
+
+  &_label {
+    font-size: 20px;
+    line-height: 1;
+    color: $theme-color;
+    letter-spacing: 0.5em;
+    font-family: $title-font;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+
+  &_title {
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+
+  &_time,
+  &_date {
+    font-family: $title-font;
+    line-height: 1;
+    color: $white-color;
+    font-weight: 700;
+  }
+
+  &_time {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  &_date {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  &_links {
+    margin-bottom: 17px;
+
+    a {
+      color: $white-color;
+      font-size: 30px;
+      display: inline-block;
+      line-height: 1;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $title-color;
+      }
+    }
+  }
+
+
+  &_slider {
+    --pos-x: -20px;
+  }
+
+}
+
+.team-map {
+  iframe {
+    height: 280px;
+  }
+}
+
+.verses-text {
+  font-size: 250px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.team-pill {
+  background-color: $white-color;
+  border: 1px solid #E2EEF1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 15px 20px 15px 20px;
+
+  &__img {
+    width: var(--img-size, 102px);
+    height: var(--img-size, 102px);
+    line-height: var(--img-size, 102px);
+    margin-right: 35px;
+    text-align: center;
+    background-color: #E4E4E4;
+    border-radius: 50%;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  &__time {
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    font-family: $title-font;
+    color: $title-color;
+    margin: 0 5px 0 0;
+  }
+
+  &__date {
+    font-size: 14px;
+    font-family: $title-font;
+    color: $title-color;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 0 0 0;
+  }
+
+  &__links {
+    a {
+      font-size: 18px;
+      display: inline-block;
+      margin: 0 8px 0 0;
+    }
+  }
+
+}
+
+.card-box {
+  background-color: #171A21;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 0 38px 0;
+  margin-bottom: 30px;
+
+  &__title {
+    color: $white-color;
+    font-size: 24px;
+    text-align: left;
+    border: 1px solid #34373c;
+    border-left: 3px solid $theme-color2;
+    padding: 15px 0 15px 40px;
+    margin: 0 0 30px 0;
+    line-height: 1;
+    border-radius: 6px;
+  }
+}
+
+.team-award {
+  &__img {
+    margin: 0 0 20px 0;
+  }
+
+  &__name {
+    color: $white-color;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 0 0;
+  }
+
+  &__date {
+    color: $theme-color;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .slick-arrow {
+    --pos-x: 30px;
+    --icon-size: 40px;
+    font-size: 16px;
+    border: 1px solid #34373c;
+    background-color: transparent;
+    color: $white-light-color;
+
+    &:hover {
+      background-color: $theme-color;
+      color: $white-color;
+      border-color: transparent;
+    }
+  }
+
+  .slick-dots {
+    margin: 20px 0 0 0;
+  }
+}
+
+.circle-progress {
+  position: relative;
+  line-height: 1;
+
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $white-color;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+.team-statistics {
+  &__progress {
+    text-align: center;
+
+    .circle-progress {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $white-light-color;
+    line-height: 20px;
+  }
+
+  &__body {
+    padding: 0 30px;
+  }
+}
+
+.team-stats {
+  padding-bottom: 0;
+
+  &__title {
+    margin-bottom: 0;
+  }
+  
+  &__icon {
+    color: $theme-color2;
+    font-size: 36px;
+    margin: 0 0 20px 0;
+  }
+
+  &__number {
+    font-size: 30px;
+    font-weight: 700;
+    color: $white-color;
+    line-height: 1;
+    margin: 0 0 5px 0;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+  }
+
+  &__content {
+    padding: 27px 20px 60px 30px;
+    border-color: #34373c;
+    background-image: linear-gradient(to right, rgba(52, 55, 60, 0.5) 4px, transparent 4px), linear-gradient(to right, rgba(52, 55, 60, 0.5) 4px, transparent 4px), linear-gradient(to right, rgba(52, 55, 60, 0.5) 4px, transparent 4px), linear-gradient(to right, rgba(52, 55, 60, 0.5) 4px, transparent 4px), linear-gradient(to right, rgba(52, 55, 60, 0.5) 4px, transparent 4px), linear-gradient(to right, rgba(52, 55, 60, 0.5) 4px, transparent 4px), linear-gradient(to right, #202226 4px, transparent 4px), linear-gradient(to right, #16181b 4px, transparent 4px);
+    background-repeat: repeat-x;
+    background-size: 36px 24px, 36px 30px, 36px 34px, 36px 40px, 36px 37px, 36px 29px, 72px 30px, 108px 37px;
+    background-position: 0 100%, 6px 100%, 12px 100%, 18px 100%, 24px 100%, 30px 100%, 6px 100%, 24px 100%;
+
+    &:nth-child(even) {
+      border-left: 1px solid #34373c;
+    }
+  }
+}
+
+
+
+@include ml {
+  .verses-text {
+    font-size: 110px;
+  }
+}
+
+@include lg {
+  .team-card {
+    padding: 40px 15px;
+
+    &_icon {
+      right: 20px;
+      top: 20px;
+      bottom: auto;
+      max-width: 50px;
+    }
+  }
+
+  .verses-text {
+    font-size: 90px;
+  }
+}
+
+@include md {
+  .verses-text {
+    font-size: 60px;
+  }
+
+  .card-box {
+    &__title {
+      font-size: 20px;
+      padding: 15px 0 15px 20px;
+    }
+  }
+}
+
+
+@include sm {
+  .team-pill {
+    --img-size: 80px;
+
+    .team-pill__img {
+      margin-right: 20px;
+
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+
+  .team-stats {
+    &__content {
+      &:nth-child(even) {
+        border-left: none;
+      }
+    }
+  }
+
+}
