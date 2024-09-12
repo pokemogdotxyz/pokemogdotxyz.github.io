@@ -87,8 +87,8 @@ Version: 1.0.0
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: rgba(0,0,0,0.10);
-  --title-font:'Shojumaru', cursive;
-  --body-font: 'Poppins', sans-serif;
+  --title-font:'Pokemon Solid', sans-serif;
+  --body-font: 'Pokemon Solid', sans-serif;
   --icon-font: 'Font Awesome 5 Pro';
   --main-container: 1640px;
   --container-gutters: 1.5rem;
@@ -122,8 +122,9 @@ body {
 
 body {
   font-family: var(--body-font);
-  font-size: 14px;
-  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  font-weight: 300;
   color: var(--body-color);
   line-height: 28px;
   overflow-x: hidden;
@@ -244,6 +245,7 @@ p {
 .h5, h5,
 .h6, h6 {
   font-family: var(--title-font);
+  letter-spacing: 0.3em;
   color: var(--title-color);
   text-transform: none;
   font-weight: 100;
@@ -253,6 +255,7 @@ p {
 
 .h1,
 h1 {
+  letter-spacing: 0.3em;
   font-size: 48px;
 }
 
@@ -306,6 +309,7 @@ h6 {
   .h1,
   h1 {
     font-size: 36px;
+    letter-spacing: 0.5em;
   }
   .h2,
   h2 {
