@@ -1,0 +1,44 @@
+.product_style1 {
+    position: relative;
+    margin-bottom: 30px;
+    .product-img {
+        margin-bottom: 27px;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            transition: 0.4s ease-in-out;
+        }
+    }
+    .product-title {
+        font-size: 24px;
+        color: $white-color;
+        margin-bottom: 3px;
+        padding-right: 84px;
+    }
+    .tag {
+        color: $theme-color;
+        font-family: $title-font;
+        font-weight: 500;
+        margin-bottom: -.5em;
+        font-size: 16px;
+    }
+    .product-price {
+        position: absolute;
+        bottom: 32px;
+        right: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: $white-color;
+        font-family: $title-font;
+        del {
+            margin-left: 4px;
+        }
+    }
+    &:hover {
+        .product-img {
+            img {
+                transform: scale(1.1) rotate(5deg);
+            }
+        }
+    }
+}

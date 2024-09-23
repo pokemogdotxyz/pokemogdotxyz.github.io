@@ -1,0 +1,99 @@
+.team-box {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba($color: #eece0e, $alpha: 0.3);
+    background-color: rgba($color: #fff, $alpha: 0.1);
+    margin-bottom: 30px;
+    position: relative;
+    &_img {
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+    &_desig {
+        color: $theme-color;
+        margin-bottom: 2px;
+        margin-top: 22px;
+        font-weight: 500;
+    }
+    &_title {
+        font-size: 30px;
+        color: $white-color;
+        margin-bottom: 2px;
+        a {
+            color: inherit;
+            &:hover {
+                color: $theme-color2;
+            }
+        }
+    }
+    .icon-btn {
+        position: relative;
+    }
+    .vs-social {
+        position: absolute;
+        bottom: 0;
+        right: -12px;
+        width: 180px;
+        a {
+            background-color: #6C6C6C;
+            color: $white-color;
+            box-shadow: 0px 5px 18px rgba(76, 88, 104, 0.06);
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(50px);
+            transition: 0.3s ease-in-out;
+            > i {
+                margin-right: 0;
+            }
+            &:nth-child(1) {
+                transition-delay: 0s;
+            }
+            &:nth-child(2) {
+                transition-delay: 0.1s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.2s;
+            }
+            &:hover {
+                background-color: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+    .team-social {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+        &:hover {
+            .vs-social {
+                a {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateX(0);
+                    &:nth-child(3) {
+                        transition-delay: 0.1s;
+                    }
+                    &:nth-child(2) {
+                        transition-delay: 0.2s;
+                    }
+                    &:nth-child(1) {
+                        transition-delay: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        .team-box {
+            &_img {
+                img {
+                    transform: scale(1.1) rotate(5deg);
+                }
+            }
+        }
+    }
+}
